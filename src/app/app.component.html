@@ -1,0 +1,14 @@
+<h1> Simple Template Driven Form </h1>
+<form #loginForm="ngForm" (ngSubmit)="loginUser(loginForm.value)">
+  <br><br>
+  <b>FirstName </b> : <input type="text" name="fname" placeholder="Enter your firstname" ngModel>
+  <br><br>
+  <b>Lastname </b> : <input type="text" name="lname" placeholder="Enter your lastname" ngModel>
+  <br><br>
+  <b>Username </b> : <input type="text" name="uname" placeholder="Enter your name" ngModel>
+  <br><br>
+ <b>Password </b>   :  <input type="password" name="password" placeholder="Enter your password" ngModel>
+  <br><br>
+  <button> LOGIN </button>
+  <br><br>
+  </form>
