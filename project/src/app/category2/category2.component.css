@@ -1,0 +1,74 @@
+.contact-info{
+    font-size: 14px;
+}
+.mainnavbar{
+    /* float: inline-start; */
+    width: 100%;
+}
+.logo{
+    float: inline-end;
+    margin-left: 20px;
+}
+
+.nav-link{
+    font-size:larger;
+    font-weight: 500;
+    transition:2s;
+    border-radius: 10%;
+    
+}
+
+.nav-link:hover{
+    background-color: green;
+    transition-duration: 0.5s;
+}
+
+.navbox{
+    margin-left: 80px;
+    display: flex;
+}
+.nav-item {
+    
+    padding-left: 10px;
+    margin: 0 0 0 10px;
+}
+.home{
+ margin-left: -10px;
+}
+.boxsize{
+    width: 400px;
+}
+.bsize{
+    margin-left: 10px;
+}
+
+
+.my-nav{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    }
+    
+    .carousel-item {
+        margin-top: 10px;
+      height: 300px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+    
+    .carousel-control-prev{
+        width: 227px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .carousel-control-next{
+        width: 227px;
+        height: 300px;
+        margin-top: 20px;
+    }
+    .carousel-inner{
+        margin-top: -20px;
+    }

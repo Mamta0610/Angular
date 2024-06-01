@@ -1,0 +1,151 @@
+<!-- first navbar start  -->
+<div >
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa-solid fa-envelope text-light contact-info"></i>
+                    <a href="" class="navbar-sm-brand text-light text-decoration-none contact-info">info&#64;greenganesha.com</a>
+                   &nbsp; <i class="fa-solid fa-phone text-light contact-info"></i>
+                    <a href="" class="navbar-sm-brand text-light text-decoration-none contact-info">010-020-8340</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <i class="fa-solid fa-location-dot text-light contact-info"></i>
+                    &nbsp;<a href="" class="navbar-sm-brand text-light text-decoration-none contact-info"><b>Delivering to Dubai 410101</b></a>
+                
+                </div>
+                
+                <div>
+                    <a href="" class="text-white"><i class="fa-brands fa-facebook me-2 "></i></a>
+                    <a href="" class="text-white"><i class="fa-brands fa-instagram me-2" ></i></a>
+                    <a href="" class="text-white"><i class="fa-brands fa-linkedin me-2"></i></a>
+                    <a href="" class="text-white"><i class="fa-brands fa-twitter me-2"></i></a>
+                </div>
+            </div>
+        </div>
+      </nav>
+    </div>
+  
+  
+  <!-- first navbar end -->
+  
+<!-- <p>{{ordersMap}}</p> -->
+
+ <!-- <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+<div class="container bootdey mt-5">
+    <div class="panel panel-default panel-order">
+        <div class="panel-heading">
+            <strong>Order history</strong>
+            
+        </div> -->
+
+        <!-- <div class="panel-body">
+            <div class="row">
+                <div class="col-md-1"><img src="https://bootdey.com/img/Content/user_3.jpg" class="media-object img-thumbnail" /></div>
+                <div class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="pull-right"><label class="label label-danger">rejected</label></div> -->
+                            <!-- <span><strong>Order number</strong></span> &nbsp;&nbsp;1<span class="label label-info"></span><br />
+                            <table >
+                                <tr>
+                                    <th class="text-center">Product </th>
+                                    <th class="text-center">Quantity</th>
+                                    <th class="text-center">cost</th>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">dhndi ganesha</td>
+                                    <td class="text-center">5</td>
+                                    <td class="text-center">40000</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">abhi ganesha</td>
+                                    <td class="text-center">2</td>
+                                    <td class="text-center">50000</td>
+                                </tr>
+                                <tr style="border-top: 1px;">
+                                    <td colspan="2">Total Amount</td>
+                                    <td>534000</td>
+                                    </tr>
+                                </table>
+                              <br />
+                            <a data-placement="top" class="btn btn-success btn-xs glyphicon glyphicon-ok" href="#" title="View"></a>
+                            <a data-placement="top" class="btn btn-danger btn-xs glyphicon glyphicon-trash" href="#" title="Danger"></a>
+                            <a data-placement="top" class="btn btn-info btn-xs glyphicon glyphicon-usd" href="#" title="Danger"></a>
+                        </div>
+                        <div class="col-md-12">order made on: 05/31/2014 by <a href="#">Jane Doe </a></div>
+                    </div>
+                </div> -->
+
+                <!-- <table border="2">
+                    <tr>
+                        <th>product name</th>
+                        <th>order id</th>
+                        <th>date</th>
+                        <th>Total Bill</th>
+                        <th>Total cost of pro</th>
+                        <th>quantity </th>
+                    </tr> -->
+
+                    <!-- <tr *ngFor="let om of ordersMap">
+                        <td>{{om[0]}}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr> -->
+
+                    <!-- <tr *ngFor="let order of ordersMap">
+                        <td>{{ order[0] }}</td>
+                        <td>{{ order[1] }}</td>
+                        <td>{{ order[2] | date:'short' }}</td>
+                        <td>{{ order[3] }}</td>
+                        <td>{{ order[4] }}</td>
+                        <td>{{ order[5] }}</td>
+                      </tr>
+
+                </table> -->
+
+                
+            <!-- </div> -->
+
+            
+
+            
+
+          
+        <!-- <div class="panel-footer">Put here some note for example: bootdey si a gallery of free bootstrap snippets bootdeys</div>
+    </div>
+</div> -->
+
+<p me-3 class="heading"><i class="fa-regular fa-clock"></i>&nbsp;products you ordered recently</p>
+<!-- -------------------------------------------------------[] -->
+  <table id="customers">
+    <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Product Name</th>
+      <th>Ordered on</th>
+      <!-- <th>Total Bill</th> -->
+      <th>Total Amount</th>
+      <th>Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of ordersMap">
+      <td>{{ order[1] }} </td>
+      <td>{{ order[0] }}</td>
+      <td>{{ order[2] | date:'short' }}</td>
+      <!-- <td>{{ order[3] }}</td> -->
+      <td>{{ order[4] }} &nbsp;Rs.</td>
+      <td>{{ order[5] }} &nbsp;Pcs.</td>
+    </tr>
+    </tbody>
+  </table> 
+   
+
+  <!-- -------------------------------- -->
+
+
+
+  

@@ -1,0 +1,29 @@
+<p>admin-product works!</p>
+ <table class="table table-striped">
+<thead>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>description</th>
+        <th>Price</th>
+        <th>stock</th>
+        <th>category</th>
+        <th>update</th>
+        <th>delete</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pro of aproducts">
+            <td>{{pro.pid}}</td>
+            <td>{{pro.name}}</td>
+            <td>{{pro.description}}</td>
+            <td>{{pro.price}}</td>
+            <td>{{pro.stock}}</td>
+            <td>{{pro.category.name}}</td>
+            <!-- <td><button type="submit" (click)="Update(pro.pid,pro.name,pro.description,pro.price,pro.stock,pro.category)">update</button></td> -->
+            <td><button type="submit" (click)="Delete()">delete</button></td>
+        
+            </tr>
+        </tbody>
+</table> 
+

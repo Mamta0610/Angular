@@ -1,0 +1,77 @@
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+}
+body{
+    margin-top:20px;
+    /* background:#eee; */
+    background-color: #ddd;
+}
+.ui-w-40 {
+    width: 20px !important;
+    height: auto;
+}
+
+.card{
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);    
+}
+.ui-product-color {
+    display: inline-block;
+    overflow: hidden;
+    margin: .144em;
+    width: .900rem;
+    height: .1200rem;
+    border-radius: 10rem;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+    vertical-align: middle;
+}
+
+/* header---------------------------------------------------- */
+
+.contact-info{
+    font-size: 14px;
+}
+
+
+.nav-link{
+    font-size:larger;
+    font-weight: 500;
+    /* color:#212934 !important; */
+    transition:2s;
+    border-radius: 10%;
+}
+.nav-link:hover{
+    background-color: rgb(1, 158, 1);
+    transition-duration: 0.5s;
+}
+
+.kypan{
+    margin-left:100px;
+    display: flex;
+}
+
+.nav-item {
+    /* margin-left: 90px; */
+    padding-left: 30px;
+}
+
+.nav-item.one {
+    margin-left: 100px;
+
+} 
+.form-control{
+    width:320px;
+}
+
+
+/* cart is empty */
+.empty-cart-message {
+    text-align: center;
+}
+
+.empty-cart-message p {
+    font-weight: bold;
+    font-size: 20px;
+}

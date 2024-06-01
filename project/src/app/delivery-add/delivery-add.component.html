@@ -1,0 +1,45 @@
+<div class="container mt-5">
+    <h2 class="mb-4">Delivery Address</h2>
+    <form (ngSubmit)="onSubmit()" #deliveryForm="ngForm" class="custom-form">
+        <!-- Name and Address Section -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputName">Full Name</label>
+                <input type="text" class="form-control" id="inputName" name="fullName" placeholder="John Doe"
+                    required [(ngModel)]="deliveryInfo.fullname">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress1">Street Line 1</label>
+                <input type="text" class="form-control" id="inputAddress1" name="addressLine1" placeholder="Street line no 1"
+                    required [(ngModel)]="deliveryInfo.addline1">
+                <label for="inputAddress2">Street Line 2</label>
+                <input type="text" class="form-control" id="inputAddress2" name="addressLine2" placeholder="Street line no 2"
+                    [(ngModel)]="deliveryInfo.addline2">
+            </div>
+        </div>
+
+        <!-- City, State, and ZIP Code Section -->
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="inputCity" name="city" required [(ngModel)]="deliveryInfo.city">
+            </div>
+            <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <select id="inputState" class="form-control" name="state" required [(ngModel)]="deliveryInfo.state">
+                    <option value="" disabled selected>Choose...</option>
+                    <option value="MH">Maharahtra</option>
+                    <option value="RJ">Rajasthan</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">ZIP Code</label>
+                <input type="text" class="form-control" id="inputZip" name="zipCode" required
+                    [(ngModel)]="deliveryInfo.pincode">
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary" [disabled]="!deliveryForm.valid">Make Order</button>
+    </form>
+</div>
